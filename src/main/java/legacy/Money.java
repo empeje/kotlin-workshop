@@ -35,6 +35,14 @@ public final class Money {
         }
     }
 
+    public Money minus(Money other) {
+        if (this.currency.equals(other.currency)) {
+            return Money.of(this.value.subtract(other.value), this.currency);
+        } else {
+            throw new IllegalStateException("Can't add two legacy.Money values. Currencies are different.");
+        }
+    }
+
     public Money times(Percent percent) {
         return Money.of(
                 this.value.multiply(percent.getFractionalValue()).stripTrailingZeros(),

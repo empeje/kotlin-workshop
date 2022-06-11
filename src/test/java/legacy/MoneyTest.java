@@ -43,6 +43,20 @@ public class MoneyTest {
     }
 
     @Test
+    void shouldSubtractTwoValues() {
+        // given
+        var oneEur = Money.of(BigDecimal.valueOf(1), Currency.EUR);
+        var tenEur = Money.of(BigDecimal.valueOf(10), Currency.EUR);
+
+        // when
+        var result = tenEur.minus(oneEur);
+
+        // then
+        assertThat(result.getValue()).isEqualTo(BigDecimal.valueOf(9));
+        assertThat(result.getCurrency()).isEqualTo(Currency.EUR);
+    }
+
+    @Test
     void plusOperationIsCommutative() {
         // given
         var oneEur = Money.of(BigDecimal.valueOf(1), Currency.EUR);
