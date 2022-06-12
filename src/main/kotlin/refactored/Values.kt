@@ -43,3 +43,6 @@ data class Money(val value: BigDecimal, val currency: Currency) {
         currency = currency
     )
 }
+
+@JvmInline
+value class UserId(val value: Long)
