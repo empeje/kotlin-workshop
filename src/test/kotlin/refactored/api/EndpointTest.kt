@@ -10,6 +10,9 @@ import refactored.testdoubles.MockDomainRepository
 
 class EndpointTest {
 
+//    private typealias NotFoundDomainException = DomainException.NotFound()
+//    private typealias ValidationDomainException = DomainException.Validation()
+//
 //    private val repository = MockDomainRepository()
 //    private val endpoint = TODO()
 //
