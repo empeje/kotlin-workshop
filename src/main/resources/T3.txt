@@ -1,8 +1,8 @@
 Using Kotlin:
 1) Refactor DiscountCalculator.kt using when instead of if
 2) Refactor refactored.Money methods to use check() instead of if's for validation
-2) Change refactored.Money class methods to operator functions. Invoke them using operator instead of method names.
-3) Implement sealed class refactored.DomainException with data class subclasses (NotFound and Validation).
+3) Change refactored.Money class methods to operator functions. Invoke them using operator instead of method names.
+4) Implement sealed class refactored.DomainException with data class subclasses (NotFound and Validation).
     Then implement DomainService interface implementation with delegation to DomainRepository.
-4) Implement refactored.api.Endpoint class so that refactored.EndpointTest passes.
+5) Implement refactored.api.Endpoint class so that refactored.EndpointTest passes.
     Use extension functions for mapping of domain objects to DTOs
