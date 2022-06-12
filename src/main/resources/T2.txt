@@ -1,0 +1,4 @@
+Using Kotlin
+1) Implement AppliedDiscount sealed class with FixedDiscount and PercentageDiscount data classes as subclasses
+2) Implement AppliedDiscountRepository interface with InMemoryAppliedDiscountRepository class, so that
+    refactored.InMemoryAppliedDiscountRepositoryTest passes

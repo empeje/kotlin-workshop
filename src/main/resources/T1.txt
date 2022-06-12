@@ -1,0 +1,5 @@
+Using Kotlin:
+1) Implement Money (using data class), Currency (using value class) and Percent (using value class) classes in a single Values.kt file, so that refactored.MoneyTest passes
+2) Implement DiscountStrategy, (using sealed interface) so that refactored.DiscountStrategyTest passes (you can uncomment TestUtils class)
+3) Implement Logger interface with Sout implementation (using object class type). Then implement DiscountCalculator class
+    so that refactored.DiscountCalculatorTest passes
