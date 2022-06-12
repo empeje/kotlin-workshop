@@ -8,10 +8,11 @@ import common.DomainObjectApiResponse
 import org.junit.jupiter.api.Test
 import refactored.testdoubles.MockDomainRepository
 
+//private typealias NotFoundDomainException = DomainException.NotFound
+//private typealias ValidationDomainException = DomainException.Validation
+
 class EndpointTest {
 
-//    private typealias NotFoundDomainException = DomainException.NotFound()
-//    private typealias ValidationDomainException = DomainException.Validation()
 //
 //    private val repository = MockDomainRepository()
 //    private val endpoint = TODO()
@@ -34,7 +35,7 @@ class EndpointTest {
 //    @Test
 //    fun `should return response entity with 404 status code`() {
 //        // given
-//        repository throws NotFoundDomainException()
+//        repository throws NotFoundDomainException("info")
 //
 //        // when
 //        val response = endpoint.handle()
@@ -49,7 +50,7 @@ class EndpointTest {
 //    @Test
 //    fun `should return response entity with 400 status code`() {
 //        // given
-//        repository throws ValidationDomainException()
+//        repository throws ValidationDomainException("info")
 //
 //        // when
 //        val response = endpoint.handle()
