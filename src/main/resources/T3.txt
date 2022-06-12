@@ -1,0 +1,4 @@
+Using Kotlin:
+1) Implement sealed class DomainException with data class subclasses (NotFound and Validation).
+    Then implement DomainService interface implementation with delegation to DomainRepository.
+2) Implement Endpoint class so that refactored.EndpointTest passes
