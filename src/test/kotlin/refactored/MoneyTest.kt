@@ -15,7 +15,7 @@ class MoneyTest {
         val tenEur = Money(BigDecimal.valueOf(10), Currency.EUR)
 
         // when
-        val result = oneEur.plus(tenEur)
+        val result = oneEur + tenEur
 
         // then
         assertThat(result.value).isEqualTo(BigDecimal.valueOf(11))
